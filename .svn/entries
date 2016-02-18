@@ -1,0 +1,63 @@
+8
+
+dir
+2
+file:///I:/Jaerock/Reposit/KESM
+file:///I:/Jaerock/Reposit
+
+
+
+2008-08-31T03:45:27.587061Z
+2
+jrkwon
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+14545967-c507-de49-9988-534823ea5130
+
+Convert
+dir
+
+Resize
+dir
+
+Crop
+dir
+
+GetVolume
+dir
+
+UnitVolumeMaker
+dir
+
+VolumeViewer
+dir
+
+Registration
+dir
+
+
+
+add
+
+ImageManager
+dir
+
+MakeVolFile
+dir
+
+
+
+add
+

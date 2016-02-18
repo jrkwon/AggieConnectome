@@ -1,0 +1,328 @@
+<ui version="4.0" >
+ <class>CUnitVolumeMakerDlgClass</class>
+ <widget class="QDialog" name="CUnitVolumeMakerDlgClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>556</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>KESM Unit Volume Maker</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="0" column="0" >
+    <widget class="QGraphicsView" name="graphicsView" >
+     <property name="styleSheet" >
+      <string notr="true" >background-image: url(:/images/banner.jpg);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <item>
+      <widget class="QLabel" name="label_5" >
+       <property name="text" >
+        <string>Data Folder: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditDataFolder" />
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonDataFolder" >
+       <property name="text" >
+        <string>Browse..</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QListWidget" name="listWidgetDataInfo" >
+     <property name="styleSheet" >
+      <string notr="true" >background-image: url(:/images/background.jpg);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout_6" />
+   </item>
+   <item row="4" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
+        <string>Zoom Out Level:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxZoomOutLevel" />
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>iWidth: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxWidth" />
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>iLength: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxLength" />
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3" >
+       <property name="text" >
+        <string>iHeight: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxHeight" />
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0" >
+    <layout class="QVBoxLayout" name="verticalLayout" >
+     <item>
+      <widget class="QLabel" name="label_6" >
+       <property name="text" >
+        <string>Log:  </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidgetLog" />
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" >
+       <item>
+        <spacer name="horizontalSpacer" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonClearLog" >
+         <property name="text" >
+          <string>Clear Log</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="0" >
+    <layout class="QVBoxLayout" name="verticalLayout_2" >
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_10" >
+       <item>
+        <widget class="QLabel" name="label_11" >
+         <property name="text" >
+          <string>Image:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBarImage" >
+         <property name="value" >
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_11" >
+       <item>
+        <widget class="QLabel" name="label_10" >
+         <property name="text" >
+          <string>ZoomOut: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBarZoomOut" >
+         <property name="value" >
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4" >
+       <item>
+        <widget class="QLabel" name="label_7" >
+         <property name="text" >
+          <string>Width: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBarWidth" >
+         <property name="value" >
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8" >
+       <item>
+        <widget class="QLabel" name="label_8" >
+         <property name="text" >
+          <string>Length: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBarLength" >
+         <property name="value" >
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_9" >
+       <item>
+        <widget class="QLabel" name="label_9" >
+         <property name="text" >
+          <string>Height:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBarHeight" >
+         <property name="value" >
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="7" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout_5" >
+     <item>
+      <spacer name="horizontalSpacer_5" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonStart" >
+       <property name="text" >
+        <string>Start</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonStop" >
+       <property name="text" >
+        <string>Stop</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>graphicsView</zorder>
+  <zorder>listWidgetDataInfo</zorder>
+  <zorder>label_11</zorder>
+  <zorder>progressBarImage</zorder>
+  <zorder>progressBarImage</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources>
+  <include location="qrc/UnitVolumeMaker.qrc" />
+ </resources>
+ <connections/>
+ <slots>
+  <slot>RedoIndexes()</slot>
+ </slots>
+</ui>

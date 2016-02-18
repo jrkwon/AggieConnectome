@@ -1,0 +1,281 @@
+<ui version="4.0" >
+ <class>CCropDialogClass</class>
+ <widget class="QDialog" name="CCropDialogClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>544</width>
+    <height>657</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>KESM Data Cropper</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3" >
+   <item row="0" column="0" >
+    <widget class="QGraphicsView" name="graphicsView" >
+     <property name="styleSheet" >
+      <string notr="true" >background-image: url(:/images/banner.jpg);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <layout class="QGridLayout" name="gridLayout_2" >
+     <item row="0" column="0" colspan="2" >
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>Source Folder: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" >
+      <widget class="QLineEdit" name="lineEditSourceFolder" />
+     </item>
+     <item row="0" column="3" >
+      <widget class="QPushButton" name="pushButtonSourceFolderBrowse" >
+       <property name="text" >
+        <string>Browse...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>Dest Folder: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2" >
+      <widget class="QLineEdit" name="lineEditDestFolder" />
+     </item>
+     <item row="1" column="3" >
+      <widget class="QPushButton" name="pushButtonDestFolderBrowse" >
+       <property name="text" >
+        <string>Browse...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout_3" >
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3" >
+       <item>
+        <widget class="QLabel" name="label_3" >
+         <property name="text" >
+          <string>Source Tissue Block Information</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidgetSourceInfo" >
+         <property name="styleSheet" >
+          <string notr="true" >background-image: url(:/images/background.jpg);</string>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::ContiguousSelection</enum>
+         </property>
+         <property name="spacing" >
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5" >
+       <item>
+        <widget class="QLabel" name="label_7" >
+         <property name="text" >
+          <string>Destination Tissue Block Information</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidgetDestInfo" >
+         <property name="styleSheet" >
+          <string notr="true" >background-image: url(:/images/background.jpg);</string>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::ContiguousSelection</enum>
+         </property>
+         <property name="spacing" >
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0" >
+    <layout class="QVBoxLayout" name="verticalLayout" >
+     <item>
+      <widget class="QLabel" name="label_6" >
+       <property name="text" >
+        <string>Console Output</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidgetOutput" >
+       <property name="styleSheet" >
+        <string notr="true" >background-image: url(:/images/bnl_logo_bg.jpg)</string>
+       </property>
+       <property name="selectionMode" >
+        <enum>QAbstractItemView::ContiguousSelection</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" >
+       <item>
+        <spacer name="horizontalSpacer_3" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonClearOutput" >
+         <property name="text" >
+          <string>Clear Output</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" >
+       <item>
+        <widget class="QLabel" name="label_8" >
+         <property name="text" >
+          <string>Column: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxColumn" />
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0" >
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="0" >
+      <widget class="QLabel" name="label_5" >
+       <property name="text" >
+        <string>Column: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QProgressBar" name="progressBarColumn" >
+       <property name="value" >
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
+        <string>Image:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QProgressBar" name="progressBarImage" >
+       <property name="value" >
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout_4" >
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCrop" >
+       <property name="text" >
+        <string>Crop</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonPauseResume" >
+       <property name="text" >
+        <string>Pause</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonStop" >
+       <property name="text" >
+        <string>Stop</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources>
+  <include location="qrc/Crop.qrc" />
+ </resources>
+ <connections/>
+</ui>

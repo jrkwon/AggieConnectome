@@ -1,0 +1,89 @@
+<ui version="4.0" >
+ <class>CGetVolumeDialogClass</class>
+ <widget class="QDialog" name="CGetVolumeDialogClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CGetVolumeDialog</string>
+  </property>
+  <widget class="QWidget" name="" >
+   <property name="geometry" >
+    <rect>
+     <x>12</x>
+     <y>8</y>
+     <width>471</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" >
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" >
+      <item>
+       <layout class="QGridLayout" name="gridLayout" >
+        <item row="0" column="0" >
+         <widget class="QLabel" name="label" >
+          <property name="text" >
+           <string>Index of Width</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QLineEdit" name="lineEditWidth" />
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="label_2" >
+          <property name="text" >
+           <string>Index of Length</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QLineEdit" name="lineEditLength" />
+        </item>
+        <item row="2" column="0" >
+         <widget class="QLabel" name="label_3" >
+          <property name="text" >
+           <string>Index of Height</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" >
+         <widget class="QLineEdit" name="lineEditHeight" />
+        </item>
+        <item row="3" column="0" >
+         <widget class="QLabel" name="label_4" >
+          <property name="text" >
+           <string>ZoomOut:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" >
+         <widget class="QComboBox" name="comboBoxZoomOut" />
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonGetVolume" >
+        <property name="text" >
+         <string>Get Volume</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidgetResult" />
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

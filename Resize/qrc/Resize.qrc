@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="images" >
+    <file>banner.jpg</file>
+    <file>cslogo.gif</file>
+    <file>bnl_logo_bg.jpg</file>
+    <file>background.jpg</file>
+  </qresource>
+</RCC>

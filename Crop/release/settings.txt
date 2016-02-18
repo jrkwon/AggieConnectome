@@ -1,0 +1,10 @@
+//////////////////////////////////////
+// Dest Data Information
+//////////////////////////////////////
+ProjectDir=G:/Projects/
+Toolkit=Toolkits/
+ImageMagick=ImageMagick-6.4.2-Q16
+SourceDir=J:\Jaerock\WholeMouseBrain_Golgi_Raw
+DestDir=J:\Jaerock\WholeMouseBrain_Golgi
+ZoomOutDirPrefix=ZO_
+DestFileFormat=.jpg

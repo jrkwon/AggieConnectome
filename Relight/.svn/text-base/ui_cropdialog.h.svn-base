@@ -1,0 +1,288 @@
+/********************************************************************************
+** Form generated from reading ui file 'cropdialog.ui'
+**
+** Created: Thu Jul 10 21:51:29 2008
+**      by: Qt User Interface Compiler version 4.4.0
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_CROPDIALOG_H
+#define UI_CROPDIALOG_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QDialog>
+#include <QtGui/QGraphicsView>
+#include <QtGui/QGridLayout>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
+#include <QtGui/QListWidget>
+#include <QtGui/QProgressBar>
+#include <QtGui/QPushButton>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QVBoxLayout>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_CCropDialogClass
+{
+public:
+    QGridLayout *gridLayout_3;
+    QGraphicsView *graphicsView;
+    QGridLayout *gridLayout_2;
+    QLabel *label;
+    QLineEdit *lineEditSourceFolder;
+    QPushButton *pushButtonSourceFolderBrowse;
+    QLabel *label_2;
+    QLineEdit *lineEditDestFolder;
+    QPushButton *pushButtonDestFolderBrowse;
+    QHBoxLayout *horizontalLayout_3;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label_3;
+    QListWidget *listWidgetSourceInfo;
+    QVBoxLayout *verticalLayout_5;
+    QLabel *label_7;
+    QListWidget *listWidgetDestInfo;
+    QVBoxLayout *verticalLayout;
+    QLabel *label_6;
+    QListWidget *listWidgetOutput;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer_3;
+    QPushButton *pushButtonClearOutput;
+    QGridLayout *gridLayout;
+    QLabel *label_5;
+    QProgressBar *progressBarColumn;
+    QLabel *label_4;
+    QProgressBar *progressBarImage;
+    QHBoxLayout *horizontalLayout_4;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *pushButtonCrop;
+    QPushButton *pushButtonPauseResume;
+    QPushButton *pushButtonStop;
+    QSpacerItem *horizontalSpacer_2;
+
+    void setupUi(QDialog *CCropDialogClass)
+    {
+    if (CCropDialogClass->objectName().isEmpty())
+        CCropDialogClass->setObjectName(QString::fromUtf8("CCropDialogClass"));
+    CCropDialogClass->resize(544, 657);
+    gridLayout_3 = new QGridLayout(CCropDialogClass);
+    gridLayout_3->setSpacing(6);
+    gridLayout_3->setMargin(11);
+    gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+    graphicsView = new QGraphicsView(CCropDialogClass);
+    graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
+    graphicsView->setStyleSheet(QString::fromUtf8("background-image: url(:/images/banner.jpg);"));
+
+    gridLayout_3->addWidget(graphicsView, 0, 0, 1, 1);
+
+    gridLayout_2 = new QGridLayout();
+    gridLayout_2->setSpacing(6);
+    gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+    label = new QLabel(CCropDialogClass);
+    label->setObjectName(QString::fromUtf8("label"));
+
+    gridLayout_2->addWidget(label, 0, 0, 1, 2);
+
+    lineEditSourceFolder = new QLineEdit(CCropDialogClass);
+    lineEditSourceFolder->setObjectName(QString::fromUtf8("lineEditSourceFolder"));
+
+    gridLayout_2->addWidget(lineEditSourceFolder, 0, 2, 1, 1);
+
+    pushButtonSourceFolderBrowse = new QPushButton(CCropDialogClass);
+    pushButtonSourceFolderBrowse->setObjectName(QString::fromUtf8("pushButtonSourceFolderBrowse"));
+
+    gridLayout_2->addWidget(pushButtonSourceFolderBrowse, 0, 3, 1, 1);
+
+    label_2 = new QLabel(CCropDialogClass);
+    label_2->setObjectName(QString::fromUtf8("label_2"));
+
+    gridLayout_2->addWidget(label_2, 1, 0, 1, 1);
+
+    lineEditDestFolder = new QLineEdit(CCropDialogClass);
+    lineEditDestFolder->setObjectName(QString::fromUtf8("lineEditDestFolder"));
+
+    gridLayout_2->addWidget(lineEditDestFolder, 1, 1, 1, 2);
+
+    pushButtonDestFolderBrowse = new QPushButton(CCropDialogClass);
+    pushButtonDestFolderBrowse->setObjectName(QString::fromUtf8("pushButtonDestFolderBrowse"));
+
+    gridLayout_2->addWidget(pushButtonDestFolderBrowse, 1, 3, 1, 1);
+
+
+    gridLayout_3->addLayout(gridLayout_2, 1, 0, 1, 1);
+
+    horizontalLayout_3 = new QHBoxLayout();
+    horizontalLayout_3->setSpacing(6);
+    horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+    verticalLayout_3 = new QVBoxLayout();
+    verticalLayout_3->setSpacing(6);
+    verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+    label_3 = new QLabel(CCropDialogClass);
+    label_3->setObjectName(QString::fromUtf8("label_3"));
+
+    verticalLayout_3->addWidget(label_3);
+
+    listWidgetSourceInfo = new QListWidget(CCropDialogClass);
+    listWidgetSourceInfo->setObjectName(QString::fromUtf8("listWidgetSourceInfo"));
+    listWidgetSourceInfo->setStyleSheet(QString::fromUtf8("background-image: url(:/images/background.jpg);"));
+    listWidgetSourceInfo->setFrameShadow(QFrame::Sunken);
+    listWidgetSourceInfo->setSelectionMode(QAbstractItemView::ContiguousSelection);
+    listWidgetSourceInfo->setSpacing(0);
+
+    verticalLayout_3->addWidget(listWidgetSourceInfo);
+
+
+    horizontalLayout_3->addLayout(verticalLayout_3);
+
+    verticalLayout_5 = new QVBoxLayout();
+    verticalLayout_5->setSpacing(6);
+    verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+    label_7 = new QLabel(CCropDialogClass);
+    label_7->setObjectName(QString::fromUtf8("label_7"));
+
+    verticalLayout_5->addWidget(label_7);
+
+    listWidgetDestInfo = new QListWidget(CCropDialogClass);
+    listWidgetDestInfo->setObjectName(QString::fromUtf8("listWidgetDestInfo"));
+    listWidgetDestInfo->setStyleSheet(QString::fromUtf8("background-image: url(:/images/background.jpg);"));
+    listWidgetDestInfo->setFrameShadow(QFrame::Sunken);
+    listWidgetDestInfo->setSelectionMode(QAbstractItemView::ContiguousSelection);
+    listWidgetDestInfo->setSpacing(0);
+
+    verticalLayout_5->addWidget(listWidgetDestInfo);
+
+
+    horizontalLayout_3->addLayout(verticalLayout_5);
+
+
+    gridLayout_3->addLayout(horizontalLayout_3, 2, 0, 1, 1);
+
+    verticalLayout = new QVBoxLayout();
+    verticalLayout->setSpacing(6);
+    verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+    label_6 = new QLabel(CCropDialogClass);
+    label_6->setObjectName(QString::fromUtf8("label_6"));
+
+    verticalLayout->addWidget(label_6);
+
+    listWidgetOutput = new QListWidget(CCropDialogClass);
+    listWidgetOutput->setObjectName(QString::fromUtf8("listWidgetOutput"));
+    listWidgetOutput->setStyleSheet(QString::fromUtf8("background-image: url(:/images/bnl_logo_bg.jpg)"));
+    listWidgetOutput->setSelectionMode(QAbstractItemView::ContiguousSelection);
+
+    verticalLayout->addWidget(listWidgetOutput);
+
+    horizontalLayout = new QHBoxLayout();
+    horizontalLayout->setSpacing(6);
+    horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+    horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+    horizontalLayout->addItem(horizontalSpacer_3);
+
+    pushButtonClearOutput = new QPushButton(CCropDialogClass);
+    pushButtonClearOutput->setObjectName(QString::fromUtf8("pushButtonClearOutput"));
+
+    horizontalLayout->addWidget(pushButtonClearOutput);
+
+
+    verticalLayout->addLayout(horizontalLayout);
+
+
+    gridLayout_3->addLayout(verticalLayout, 3, 0, 1, 1);
+
+    gridLayout = new QGridLayout();
+    gridLayout->setSpacing(6);
+    gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+    label_5 = new QLabel(CCropDialogClass);
+    label_5->setObjectName(QString::fromUtf8("label_5"));
+
+    gridLayout->addWidget(label_5, 0, 0, 1, 1);
+
+    progressBarColumn = new QProgressBar(CCropDialogClass);
+    progressBarColumn->setObjectName(QString::fromUtf8("progressBarColumn"));
+    progressBarColumn->setValue(24);
+
+    gridLayout->addWidget(progressBarColumn, 0, 1, 1, 1);
+
+    label_4 = new QLabel(CCropDialogClass);
+    label_4->setObjectName(QString::fromUtf8("label_4"));
+
+    gridLayout->addWidget(label_4, 1, 0, 1, 1);
+
+    progressBarImage = new QProgressBar(CCropDialogClass);
+    progressBarImage->setObjectName(QString::fromUtf8("progressBarImage"));
+    progressBarImage->setValue(24);
+
+    gridLayout->addWidget(progressBarImage, 1, 1, 1, 1);
+
+
+    gridLayout_3->addLayout(gridLayout, 4, 0, 1, 1);
+
+    horizontalLayout_4 = new QHBoxLayout();
+    horizontalLayout_4->setSpacing(6);
+    horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+    horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+    horizontalLayout_4->addItem(horizontalSpacer);
+
+    pushButtonCrop = new QPushButton(CCropDialogClass);
+    pushButtonCrop->setObjectName(QString::fromUtf8("pushButtonCrop"));
+
+    horizontalLayout_4->addWidget(pushButtonCrop);
+
+    pushButtonPauseResume = new QPushButton(CCropDialogClass);
+    pushButtonPauseResume->setObjectName(QString::fromUtf8("pushButtonPauseResume"));
+
+    horizontalLayout_4->addWidget(pushButtonPauseResume);
+
+    pushButtonStop = new QPushButton(CCropDialogClass);
+    pushButtonStop->setObjectName(QString::fromUtf8("pushButtonStop"));
+
+    horizontalLayout_4->addWidget(pushButtonStop);
+
+    horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+    horizontalLayout_4->addItem(horizontalSpacer_2);
+
+
+    gridLayout_3->addLayout(horizontalLayout_4, 5, 0, 1, 1);
+
+
+    retranslateUi(CCropDialogClass);
+
+    QMetaObject::connectSlotsByName(CCropDialogClass);
+    } // setupUi
+
+    void retranslateUi(QDialog *CCropDialogClass)
+    {
+    CCropDialogClass->setWindowTitle(QApplication::translate("CCropDialogClass", "KESM Data Cropper", 0, QApplication::UnicodeUTF8));
+    label->setText(QApplication::translate("CCropDialogClass", "Source Folder: ", 0, QApplication::UnicodeUTF8));
+    pushButtonSourceFolderBrowse->setText(QApplication::translate("CCropDialogClass", "Browse...", 0, QApplication::UnicodeUTF8));
+    label_2->setText(QApplication::translate("CCropDialogClass", "Dest Folder: ", 0, QApplication::UnicodeUTF8));
+    pushButtonDestFolderBrowse->setText(QApplication::translate("CCropDialogClass", "Browse...", 0, QApplication::UnicodeUTF8));
+    label_3->setText(QApplication::translate("CCropDialogClass", "Source Tissue Block Information", 0, QApplication::UnicodeUTF8));
+    label_7->setText(QApplication::translate("CCropDialogClass", "Destination Tissue Block Information", 0, QApplication::UnicodeUTF8));
+    label_6->setText(QApplication::translate("CCropDialogClass", "Console Output", 0, QApplication::UnicodeUTF8));
+    pushButtonClearOutput->setText(QApplication::translate("CCropDialogClass", "Clear Output", 0, QApplication::UnicodeUTF8));
+    label_5->setText(QApplication::translate("CCropDialogClass", "Column: ", 0, QApplication::UnicodeUTF8));
+    label_4->setText(QApplication::translate("CCropDialogClass", "Image:", 0, QApplication::UnicodeUTF8));
+    pushButtonCrop->setText(QApplication::translate("CCropDialogClass", "Crop", 0, QApplication::UnicodeUTF8));
+    pushButtonPauseResume->setText(QApplication::translate("CCropDialogClass", "Pause", 0, QApplication::UnicodeUTF8));
+    pushButtonStop->setText(QApplication::translate("CCropDialogClass", "Stop", 0, QApplication::UnicodeUTF8));
+    Q_UNUSED(CCropDialogClass);
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class CCropDialogClass: public Ui_CCropDialogClass {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_CROPDIALOG_H
